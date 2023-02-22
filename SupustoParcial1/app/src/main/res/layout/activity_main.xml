@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/edtCuenta"
+            android:layout_width="280dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:hint="ingrese el numero de cuenta "
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.112" />
+
+        <EditText
+            android:id="@+id/edtSaldo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Ingrese el saldo de la cuenta"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtCuenta"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtCuenta"
+            app:layout_constraintTop_toBottomOf="@+id/edtCuenta" />
+
+        <TextView
+            android:id="@+id/txvMostar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtSaldo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtSaldo"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaldo" />
+
+        <TextView
+            android:id="@+id/txvAcreeedor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtSaldo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtSaldo"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaldo" />
+
+        <TextView
+            android:id="@+id/txvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtSaldo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtSaldo"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaldo" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:background="#A82ABD"
+            android:backgroundTint="#A61818"
+            android:onClick="cuenta"
+            android:text="Ingresar"
+            app:layout_constraintEnd_toEndOf="@+id/edtSaldo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtSaldo"
+            app:layout_constraintTop_toBottomOf="@+id/edtSaldo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
